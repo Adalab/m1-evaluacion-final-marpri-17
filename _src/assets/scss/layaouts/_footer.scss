@@ -1,0 +1,35 @@
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorFooter;
+    color: $btncolor-second;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+
+    & .nav-sections {
+        list-style: none;
+        padding-inline-start: 0px;
+        flex-grow: 1;
+    }
+    & .nav-media{
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+    & .fo_nav{
+        text-align: center;
+        text-transform: uppercase;
+        text-align: center;
+        color: $btncolor-second;
+        text-decoration: none;
+    }
+}
+.footer_heart{
+    color: $btncolor-primary;
+}
+.footer-separator {
+    height: 30px;
+}

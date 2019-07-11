@@ -1,6 +1,23 @@
 .main_info{
-    .foreword {
+    display: flex;
+    flex-flow: column;
+    margin: 15px;
+
+    & .foreword {
     font-size: 14px;
     color: #8ccbea;
+    padding-left: 14px;
+    }
+    & .main_headline {
+        padding-left: 14px;
+    }
 }
+.wrapper_btn-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+.btn-main {
+    align-self: center;
 }
