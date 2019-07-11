@@ -1,6 +1,4 @@
 @import 'core/variables';
-@import 'layaouts/hero';
 @import 'core/reset';
-* {
-	box-sizing: border-box;
-}
+@import 'layaouts/hero';
+@import 'layaouts/header';
