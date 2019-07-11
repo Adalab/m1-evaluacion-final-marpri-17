@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns:70px 1fr 70px;
     grid-template-rows: repeat(4, 156px);
-    & .main_headline{
+    & .aside_headline{
         padding-top: 30px;
         grid-column: 2/3;
     }
