@@ -16,18 +16,22 @@
         align-items: center;
         font-family: $font-headline;
         font-weight: bold;
-        font-size: 42px;
+        font-size: 62px;
         color: $btncolor-second;
-        line-height: 55px;
+        line-height: 60px;
+        padding: 25px;
+        letter-spacing: 4px;
+        &-child {
+            margin: 20px;
+        }
 }
     & .headline{
         color: $btncolor-second;
         text-align: center;
+        padding: 10px;
     }
 }
 .btn-hero {
-    background-color: $btncolor-second;
-    padding: 18px;
-    border-radius: 50%;
+    @include arrow();
     margin-top: 45px;
 }

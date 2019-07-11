@@ -1,7 +1,9 @@
 @import 'core/variables';
 @import 'core/reset';
+@import 'core/mixins';
 @import 'layaouts/hero';
 @import 'layaouts/header';
 @import 'layaouts/section';
 @import 'layaouts/info';
-@import 'layaouts/footer'
+@import 'layaouts/footer';
+@import 'core/typography';
