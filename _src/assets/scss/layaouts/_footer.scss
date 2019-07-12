@@ -1,6 +1,8 @@
 @import 'core/variables';
 @import 'core/mixins';
-
+.bg-footer{
+    background-color: $colorFooter;
+}
 .footer{
     display: flex;
     flex-direction: column;
@@ -15,10 +17,12 @@
         list-style: none;
         padding-inline-start: 0px;
         flex-grow: 1;
-    }
-    & .nav-media {
+        text-align: center;
+        }
+    & .nav-media, .copy {
         list-style: none;
         padding-inline-start: 0px;
+        text-align: center;
     }
     & .fo_nav {
         text-align: center;
@@ -42,26 +46,22 @@
     }
 }
 .btn-footer {
-    @include arrow();
-    background-image: url("../images/ico-arrow.svg");
-    position: relative;
-    transform: translateY(-30px);
-    transition: transform 1s ease-out;
-    &:hover{
-        opacity: 0.8px;
-        border: 3px solid $btncolor-primary;
-    }
-    @media all and (min-width:768px){
-    position: relative;
-    transform: translate(-50vw, -110px);
-    @media all and (min-width:1280px){
-        transform: translate(-20vw, -110px);
-    }
-    }
+        @include arrow();
+        background-image: url("../images/ico-arrow.svg");
+        transition: transform 1s ease-out;
+        width: 45px;
+        margin: auto;
+        transform: translateY(-22.5px);
+        &:hover{
+            opacity: 0.8px;
+            border: 3px solid $btncolor-primary;
+        }
 }
-.anchor {
+.copy{
+    & .anchor, .footer_motto {
     text-decoration: none;
     color: $btncolor-second;
+    }
 }
 .wrapper-footer{
     @media all and (min-width:768px){
@@ -71,19 +71,19 @@
     flex-grow: 1;
     align-items: baseline;
     padding: 25px;
+    padding-left: 80px;
     & .fo_nav{
         margin: 15px;
         padding: 10px;
     }
     & .copy{
-        order:1;
-    }
-    & .nav-media{
-        order: 3;
-    }
-    & .nav-sections{
         order:2;
     }
+    & .nav-sections{
+        order:3;
+    }
+    & .nav-media{
+        order: 4;
     }
     @media all and (min-width:1280px){
         justify-content: space-around;
@@ -92,4 +92,5 @@
     & .copy, .nav-media, .nav-sections{
         padding-right: 20px;
     }
+}
 }
