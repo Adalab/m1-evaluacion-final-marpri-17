@@ -33,5 +33,26 @@
 }
 .btn-hero {
     @include arrow();
+    background-image: url("../images/ico-scroll-down.svg");
     margin-top: 45px;
+    
+
+   @keyframes btn-down {
+       33%{
+           transform: translateY(-50%)
+       }
+       60%{
+           transform: translateY(-10%)
+       }
+       75%{
+        transform: translateY(-50%)
+       }
+       100%{
+           transform: translateY(0)
+       }
+   }
+    &:hover {
+        opacity: 0.7;
+        animation: btn-down 3s linear infinite;
+    }
 }

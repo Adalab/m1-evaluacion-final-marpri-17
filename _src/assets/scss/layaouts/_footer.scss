@@ -37,6 +37,7 @@
 
 .btn-footer {
     @include arrow();
+    background-image: url("../images/ico-arrow.svg");
     position: relative;
     transform: translateY(-30px);
     }

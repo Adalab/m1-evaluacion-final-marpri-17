@@ -1,9 +1,10 @@
 @import 'core/variables';
-@mixin arrow() {
+@mixin arrow {
     background-color: $btncolor-second;
-    padding: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 22px;
     border-radius: 50%;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
