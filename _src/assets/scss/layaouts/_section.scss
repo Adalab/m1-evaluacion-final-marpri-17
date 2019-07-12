@@ -1,39 +1,4 @@
-.wrapper_purchase {
-    background-color: $colorMain;
-    text-align: center;
-    display: grid;
-    grid-template-columns:70px 1fr 70px;
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 20px;
-        @media all and (max-width:320px){
-            grid-template-columns: 1fr;
-        }
-    & .aside_headline{
-        padding-top: 30px;
-        grid-column: 1/4;
-        @include text-sm-headline;
-    }
-    & .reasons{
-        max-width: 184px;
-        margin-left: auto;
-        margin-right: auto;
-        grid-column: 2/3;
-        justify-items: center;
-    }
-    & .text_featured {
-        @include text-sm-feat;
-        @media all and (min-width:768px){
-            @include text-md-feat;
-        }
-    }
-    & .text_reasons {
-        @include text-sm-normal;
-        @media all and (min-width:768px){
-            @include text-md-normal;
-        }
-    }
-    
-    & .btn-aside {
+.btn-aside {
         color: $btncolor-second;
         font-weight: bold;
         border: none;
@@ -42,6 +7,7 @@
         width: 184px;
         height: 45px;
         grid-column: 2/3;
+        margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
         padding: 8px;
@@ -55,6 +21,55 @@
             background: $btncolor-second;
             border: 2px solid $btncolor-primary;
             color: $btncolor-primary;
+        }
+}
+.wrapper_purchase{
+    background-color: $colorMain;
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    & .aside_headline{
+        @include text-sm-headline;
+        text-align: center;
+        grid-column: span 3;
+        @media all and (min-width:768px){
+            @include text-md-headline;
+            text-align: center;
+        }
+        @media all and (min-width:1280px){
+            @include text-l-headline;
+            text-align: center;
+        }
+    }
+    & .wrapper-reasons{
+        flex-direction: column;
+        grid-column: 2/3;
+        @media all and (min-width:768px){
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+           grid-column: span 3;
+           justify-content: space-around;
+        }
+    }
+    & .reasons{
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+        margin-bottom: 0px;
+        & .text_featured{
+            @include text-sm-feat;
+                @media all and (min-width:768px){
+                    @include text-md-feat;
+                }
+        & .text_reasons{
+            @include text-sm-normal;
+                @media all and (min-width:768px){
+                    @include text-md-normal;
+                }
+        }
         }
     }
 }
