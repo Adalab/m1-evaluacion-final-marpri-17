@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
 }
-/*Textos*/
 @mixin text-sm-before {
     font-family: $font-family;
     color: #8ccbea;
@@ -39,7 +38,6 @@
     font-size: 24px;
     text-align: left;
 }
-/*No text-sm/md-before because it's the same except desktop*/
 @mixin text-md-normal {
     font-family: $font-family;
     color: black;
@@ -55,7 +53,7 @@
 @mixin text-md-feat {
     font-family: $font-headline;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
 }
 @mixin text-md-headline {
@@ -65,7 +63,6 @@
     text-align: left;
     line-height: 45px;
 }
-/*Large size-L*/ 
 @mixin text-l-headline {
     font-family: $font-headline;
     font-weight: bold;
