@@ -32,6 +32,13 @@
     }
     &-separator {
         height: 30px;
+        @media all and (min-width:768px){
+            display: none;
+        }
+    }
+    @media all and (min-width:768px){
+        flex-direction: row-reverse;
+        flex-flow: 1;
     }
 }
 .btn-footer {
@@ -44,8 +51,27 @@
         opacity: 0.8px;
         border: 3px solid $btncolor-primary;
     }
+    @media all and (min-width:768px){
+    position: relative;
+    transform: translate(-260px, -110px);
+    }
+    /*Falta media query L*/
 }
 .anchor {
     text-decoration: none;
     color: $btncolor-second;
+}
+.wrapper-footer{
+    @media all and (min-width:768px){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    & .fo_nav{
+        margin: 15px;
+        padding: 10px;
+    }
+    }
+
 }
