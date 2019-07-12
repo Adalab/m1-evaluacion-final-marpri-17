@@ -1,1 +1,38 @@
-/*Clases de ayuda textos*/ 
+/*mixins de ayuda textos*/ 
+.text-sm-normal {
+    font-family: $font-family;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+.text-sm-feat {
+    font-family: $font-headline;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.text-sm-headline {
+    font-family: $font-headline;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+/*No text-sm/md-before because it's the same except desktop*/
+.text-md-normal {
+    font-family: $font-family;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+.text-md-feat {
+    font-family: $font-headline;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.text-md-headline {
+    font-family: $font-headline;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}

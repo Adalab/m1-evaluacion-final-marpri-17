@@ -4,12 +4,24 @@
     margin: 15px;
 
     & .foreword {
-    font-size: 14px;
-    color: #8ccbea;
     padding-left: 14px;
+    @include text-sm-before;
+    @media all and (min-width:1280px){
+        @include text-l-before;
+    }
     }
     & .main_headline {
         padding-left: 14px;
+        @media all and (min-width:1280px){
+            @include text-l-headline;
+        }
+    }
+    & .text-main_info{
+        margin: 14px;
+        @include text-sm-normal_main;
+        @media all and (min-width:768px){
+            @include text-md-normal_main;
+        }
     }
 }
 .wrapper_btn-main {
@@ -19,5 +31,22 @@
     padding-bottom: 30px;
 }
 .btn-main {
-    align-self: center;
+    margin-left: 14px;
+    width: 74px;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 22.5px;
+    border: 2px solid $btncolor-primary;
+    &:hover{
+        cursor: pointer;
+    }
+}
+@media all and (min-width:1280px){
+.wrapper__main_info{
+    display: grid;
+    grid-template-columns: 21% 1fr 21%;
+    & .main_info{
+        grid-column: 2/3;
+    }
+}
 }

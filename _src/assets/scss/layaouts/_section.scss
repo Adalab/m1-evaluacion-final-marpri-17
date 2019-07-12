@@ -5,12 +5,13 @@
     grid-template-columns:70px 1fr 70px;
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 20px;
-        @media all and (max-width:250px){
+        @media all and (max-width:320px){
             grid-template-columns: 1fr;
         }
     & .aside_headline{
         padding-top: 30px;
         grid-column: 1/4;
+        @include text-sm-headline;
     }
     & .reasons{
         max-width: 184px;
@@ -19,8 +20,26 @@
         grid-column: 2/3;
         justify-items: center;
     }
+    & .text_featured {
+        @include text-sm-feat;
+        @media all and (min-width:768px){
+            @include text-md-feat;
+        }
+    }
+    & .text_reasons {
+        @include text-sm-normal;
+        @media all and (min-width:768px){
+            @include text-md-normal;
+        }
+    }
+    
     & .btn-aside {
-        width: 124px;
+        color: $btncolor-second;
+        font-weight: bold;
+        border: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 184px;
         height: 45px;
         grid-column: 2/3;
         margin-left: auto;
@@ -28,5 +47,10 @@
         padding: 8px;
         position: relative;
         line-height: normal;
+        border-radius: 20px;
+        background-color:$btncolor-primary;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
