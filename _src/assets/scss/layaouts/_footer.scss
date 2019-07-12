@@ -34,13 +34,17 @@
         height: 30px;
     }
 }
-
 .btn-footer {
     @include arrow();
     background-image: url("../images/ico-arrow.svg");
     position: relative;
     transform: translateY(-30px);
+    transition: transform 1s ease-out;
+    &:hover{
+        opacity: 0.8px;
+        border: 3px solid $btncolor-primary;
     }
+}
 .anchor {
     text-decoration: none;
     color: $btncolor-second;
