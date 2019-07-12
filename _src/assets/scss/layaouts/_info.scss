@@ -31,14 +31,20 @@
     padding-bottom: 30px;
 }
 .btn-main {
+    font-weight: bold;
+    color: $btncolor-primary;
     margin-left: 14px;
     width: 74px;
     text-decoration: none;
     background: transparent;
     border-radius: 22.5px;
     border: 2px solid $btncolor-primary;
+    transition: all 1s ease-out;
     &:hover{
         cursor: pointer;
+        background: $btncolor-primary;
+        border: 2px solid $btncolor-second;
+        color: $btncolor-second;
     }
 }
 @media all and (min-width:1280px){
