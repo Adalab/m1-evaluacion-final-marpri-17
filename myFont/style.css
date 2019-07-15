@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'myFont';
+  src:  url('fonts/myFont.eot?84ymut');
+  src:  url('fonts/myFont.eot?84ymut#iefix') format('embedded-opentype'),
+    url('fonts/myFont.ttf?84ymut') format('truetype'),
+    url('fonts/myFont.woff?84ymut') format('woff'),
+    url('fonts/myFont.svg?84ymut#myFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'myFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ico-arrow:before {
+  content: "\e900";
+  color: #f26002;
+}
+.icon-ico-menu:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-ico-scroll-down:before {
+  content: "\e902";
+  color: #f26002;
+}
+.icon-elephant .path1:before {
+  content: "\e903";
+  color: rgb(232, 232, 232);
+}
+.icon-elephant .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(232, 232, 232);
+}
+.icon-elephant .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(119, 136, 154);
+}
+.icon-elephant .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(95, 112, 128);
+}
+.icon-elephant .path5:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(119, 136, 154);
+}
+.icon-elephant .path6:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(95, 112, 128);
+}
+.icon-elephant .path7:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 191, 197);
+}
+.icon-elephant .path8:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 191, 197);
+}
+.icon-elephant .path9:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 137, 151);
+}
+.icon-elephant .path10:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 137, 151);
+}
+.icon-elephant .path11:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(210, 209, 215);
+}
+.icon-elephant .path12:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(210, 209, 215);
+}
+.icon-elephant .path13:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(165, 176, 188);
+}
+.icon-elephant .path14:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(51, 58, 65);
+}
+.icon-elephant .path15:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(51, 58, 65);
+}
+.icon-icon:before {
+  content: "\e912";
+}
+.icon-keyboard:before {
+  content: "\e913";
+}
+.icon-rss .path1:before {
+  content: "\e914";
+  color: rgb(250, 170, 60);
+}
+.icon-rss .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(231, 151, 50);
+}
+.icon-rss .path3:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(235, 238, 242);
+}
+.icon-rss .path4:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(235, 238, 242);
+}
+.icon-rss .path5:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(235, 238, 242);
+}
+.icon-rss .path6:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(235, 238, 242);
+}
+.icon-rss .path7:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(235, 238, 242);
+}
+.icon-rss .path8:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(235, 238, 242);
+}
+.icon-twitter:before {
+  content: "\e91c";
+  color: #03a9f4;
+}
