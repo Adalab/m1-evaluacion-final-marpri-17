@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     background-color: $colorFooter;
-    color: $btncolor-second;
+    color: $colorFooter-text;
     text-align: center;
     padding: 10px;
 
@@ -18,7 +18,11 @@
         padding-inline-start: 0px;
         flex-grow: 1;
         text-align: center;
+        margin-bottom: 45px;
         }
+    .nav-media{
+        margin-bottom: 45px;
+    }
     & .nav-media, .copy {
         list-style: none;
         padding-inline-start: 0px;
@@ -28,7 +32,7 @@
         text-align: center;
         text-transform: uppercase;
         text-align: center;
-        color: $btncolor-second;
+        color: $colorFooter-text;
         text-decoration: none;
     }
     &_heart {
@@ -57,10 +61,12 @@
             border: 3px solid $btncolor-primary;
         }
 }
-.copy{
-    & .anchor, .footer_motto {
+.copy_box {
+    display: flex;
+    flex-direction: column-reverse;
+    .anchor, .footer_motto {
     text-decoration: none;
-    color: $btncolor-second;
+    color: $colorFooter-text;
     }
 }
 .wrapper-footer{
