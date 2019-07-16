@@ -1,39 +1,35 @@
-@import 'core/variables';
-@import 'core/mixins';
+@import "core/variables";
+@import "core/mixins";
 
-.bg-footer{
-    background-color: $colorFooter;
-    justify-content: center;
-    & .btn-footer {
-        @include arrow;
-        background: $btncolor-second;
-/*         background-image: url(../images/ico-arrow.svg);
- */        background-repeat: no-repeat;
-        background-position: center;
-        margin-left: auto;
-        margin-right: auto;
-        text-decoration: none;
-}
+.bg-footer {
+  background-color: $colorFooter;
+  justify-content: center;
+  & .btn-footer {
+    @include arrow;
+    background: $btncolor-second;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+  }
 
-
-/* .btn-footer {
-        width: 45px;
-        height: 45px;
-        border: 2px solid $btncolor-primary;
-        &_box{
-        background-image: url(..images/ico-arrow.svg);
-    /* & .btn-footer {
-        @include arrow();
-        background-image: url("../images/ico-arrow.svg");
-        transition: transform 1s ease-out;
-        width: 45px;
-        margin: auto;
-        transform: translateY(-22.5px);
-        &:hover{
-            opacity: 0.8px;
-            border: 3px solid $btncolor-primary;
-        } */
-.footer{
+  /* .btn-footer {
+		width: 45px;
+		height: 45px;
+		border: 2px solid $btncolor-primary;
+		&_box{
+		background-image: url(..images/ico-arrow.svg);
+	/* & .btn-footer {
+		@include arrow();
+		background-image: url("../images/ico-arrow.svg");
+		transition: transform 1s ease-out;
+		width: 45px;
+		margin: auto;
+		transform: translateY(-22.5px);
+		&:hover{
+			opacity: 0.8px;
+			border: 3px solid $btncolor-primary;
+		} */
+  & .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,70 +38,58 @@
     color: $btncolor-second;
     text-align: center;
     padding: 10px;
-
-    & .nav-sections {
-        list-style: none;
-        padding-inline-start: 0px;
-        flex-grow: 1;
-        text-align: center;
+    & .footer-separator {
+      height: 30px;
+      @media all and (min-width:768px) {
+        display: none;
+      }
     }
-    & .nav-media, .copy {
-        list-style: none;
-        padding-inline-start: 0px;
-        text-align: center;
+    & .nav-sections, .nav-media, .copy {
+      list-style: none;
+      padding-inline-start: 0px;
+      text-align: center;
     }
     & .fo_nav {
-        text-align: center;
-        text-transform: uppercase;
-        text-align: center;
-        color: $btncolor-second;
-        text-decoration: none;
-    }
-    &_heart {
-        color: $btncolor-primary;
-    }
-    &-separator {
-        height: 30px;
-         @media all and (min-width:768px){
-            display: none;
-        }
-    }
-    @media all and (min-width:768px){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      text-transform: uppercase;
+      text-align: center;
+      color: $btncolor-second;
+      text-decoration: none;
+      width: 210px;
+      & .nav-sections {
         flex-grow: 0;
-        flex-basis: auto;
-        align-items: baseline;
-        padding: 25px;
-        padding-left: 80px;
-        & .fo_nav{
-            margin: 15px;
-            padding: 10px;
+        order: 3;
+      }
+      & .copy {
+        order: 2;
+          & .anchor, .footer_motto {
+          text-decoration: none;
+          color: $btncolor-second;
+          }
+          &_heart {
+            color: $btncolor-primary;
+          }
         }
-        & .copy{
-            order:2;
+      }
+      & .nav-media {
+        order: 4;
+        justify-content: center;
+      }
+      & .fo-icn {
+        color: #14d9c4;
+        display: none;
+      }
+      &-separator {
+        height: 30px;
+        @media all and (min-width: 768px) {
+          display: none;
         }
-        & .nav-sections{
-            flex-grow:0;
-            order:3;
-        }
-        & .nav-media{
-            order: 4;
-        }
-        & .copy, .nav-media, .nav-sections{
-            padding-right: 20px;
-        }
+      }
+    /*   @media all and (min-width: 1280px) {
+        justify-content: center;
+        flex-grow: 0;
+      } */
     }
-    @media all and (min-width:1280px) {
-            justify-content: center;
-            flex-grow: 0;
-        }
-    }
-    .copy{
-    & .anchor, .footer_motto {
-    text-decoration: none;
-    color: $btncolor-second;
-    }
-    }
-}
+  }

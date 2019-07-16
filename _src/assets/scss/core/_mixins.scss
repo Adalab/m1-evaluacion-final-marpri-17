@@ -1,13 +1,11 @@
 @import 'core/variables';
 @mixin arrow {
-    background-color: $btncolor-second;
-    background-repeat: no-repeat;
-    background-position: center;
     padding: 22px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 /*Textos*/
 @mixin text-sm-before {
